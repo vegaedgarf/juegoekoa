@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-indigo-600">MiNombre.dev</h1>
+            <div class="space-x-4 text-sm font-medium">
+                <a href="#sobre-mi" class="hover:text-indigo-600 transition">Sobre mí</a>
+                <a href="#proyectos" class="hover:text-indigo-600 transition">Proyectos</a>
+                <a href="#contacto" class="hover:text-indigo-600 transition">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-12 flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="text-center py-12 md:py-20">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">¡Hola, bienvenido a mi sitio web!</h2>
+            <p class="text-lg text-slate-600 max-w-xl mx-auto mb-8">
+                Estoy construyendo este espacio para compartir mis proyectos y aprender sobre desarrollo web. Desplegado fácilmente con GitHub Pages.
+            </p>
+            <a href="#contacto" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow transition">
+                Contáctame
+            </a>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="py-12 border-t border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Sobre mí</h3>
+            <p class="text-slate-600 leading-relaxed">
+                Aquí puedes contar un poco sobre ti, cuáles son tus pasiones, tecnologías que estás aprendiendo o qué tipo de contenido planeas publicar en esta página web.
+            </p>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="py-12 border-t border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-900 mb-6">Mis Proyectos</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Proyecto 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <h4 class="font-bold text-lg text-slate-900 mb-2">Proyecto 1</h4>
+                    <p class="text-slate-600 text-sm mb-4">Breve descripción de tu primer proyecto increíble.</p>
+                    <a href="#" class="text-indigo-600 font-medium text-sm hover:underline">Ver repositorio &rarr;</a>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <h4 class="font-bold text-lg text-slate-900 mb-2">Proyecto 2</h4>
+                    <p class="text-slate-600 text-sm mb-4">Breve descripción de tu segundo proyecto.</p>
+                    <a href="#" class="text-indigo-600 font-medium text-sm hover:underline">Ver repositorio &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="py-12 border-t border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Contacto</h3>
+            <p class="text-slate-600 mb-4">¿Quieres ponerte en contacto conmigo? Escríbeme a través de mis redes o correo electrónico.</p>
+            <div class="flex space-x-4">
+                <a href="mailto:tu-correo@example.com" class="text-indigo-600 font-medium hover:underline">Correo electrónico</a>
+                <a href="https://github.com/tu-usuario" target="_blank" class="text-indigo-600 font-medium hover:underline">GitHub</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+        <p>&copy; 2026 MiNombre. Hecho con HTML y Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
